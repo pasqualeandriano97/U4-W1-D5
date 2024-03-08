@@ -5,23 +5,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        Immagine immagine = new Immagine("immagine.jpg", 10, 10);
-        Video video = new Video("video.mp4", 10, "mp4", 10,5, 10);
-        RegistrazioneAudio audio = new RegistrazioneAudio("audio.mp3", 10, "mp3", 5, 10);
-      /* immagine.stampa();
-       video.stampa();
-       video.play();
-       immagine.aumentaLuminosità();
-       immagine.stampa();
-       immagine.diminuisciLuminosità();
-       immagine.stampa();
-       audio.play();
-*/
+
+
         ElementoMultimediale[] elementi = new ElementoMultimediale[0];
         System.out.println("Scegli tra 3 possibilità scrivendo un numero tra 1 e 3 e premi invio");
 
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 6; i++) {
             System.out.println("1. Immagine, 2. Video, 3. Registrazione Audio");
             Scanner sc = new Scanner(System.in);
             int scelta = sc.nextInt();
@@ -455,11 +444,11 @@ public class Main {
     public static ElementoMultimediale[] addX(ElementoMultimediale myArray[], ElementoMultimediale x) {
         int i;
 
-        // create a new array of a bigger size (+ one element)
+
 
         ElementoMultimediale newArray[] = new ElementoMultimediale[myArray.length + 1];
 
-        // insert the elements from the old array into the new one
+
         for (i = 0; i < myArray.length; i++)
             newArray[i] = myArray[i];
 
